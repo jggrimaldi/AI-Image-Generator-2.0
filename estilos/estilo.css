@@ -66,6 +66,36 @@ th, td {
     padding: 10px;
 } 
 
+/* Galeria */
+
+.container-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    height: 50vh;
+}
+
+.box-img {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 6px;
+    height: 250px;
+    background-color: #7a7d81;
+    gap: 1rem;
+}
+
+.box-img img {
+    height: 150px;
+    width: 100%;
+    border-radius: 8px;
+}
+
+.box-img p {
+    font-weight: bold;
+}
+
 /* GERADOR IMAGEM */
 .gerador {
     display: flex;
@@ -123,8 +153,15 @@ th, td {
 /* Contatos */
 .container {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
 }
 .box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 700px;
 }
 
