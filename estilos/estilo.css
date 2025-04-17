@@ -67,13 +67,21 @@ th, td {
 } 
 
 /* Galeria */
-
-.container-img {
+.container {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    height: 50hz;
+}
+
+.container-img {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
     gap: 1rem;
-    height: 50vh;
+    width: 50%;
+    padding-top: 10px;
 }
 
 .box-img {
