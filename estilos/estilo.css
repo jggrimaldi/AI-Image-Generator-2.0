@@ -52,8 +52,14 @@ div a {
 a:active {
     color: rgba(211, 211, 211, 0.842);
 }
+/* Index */
+.titulo-index {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 
-/* TABELA */
 table {
     margin-top: 50px;
     border-collapse: collapse;
@@ -65,6 +71,34 @@ th, td {
     border: 2px solid darkgray;
     padding: 10px;
 } 
+
+/* Sobre */
+.container-sobre {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-sobre div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin-top: 10px;
+}
+
+
+
+.container-sobre div img {
+    height: 300px;
+    width: 300px;
+    margin: 10px;
+    border-radius: 6px;
+}
+
+.container-sobre div img[alt="exemplo2"] {
+    grid-column-start: 2;
+}
 
 /* Galeria */
 .container {
