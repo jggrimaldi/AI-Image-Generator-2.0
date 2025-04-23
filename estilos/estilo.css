@@ -36,7 +36,7 @@ header {
     padding-left: 10px;    
 }
 
-ul {
+.links {
     display: flex;
     gap: 3rem;
     list-style: none;
