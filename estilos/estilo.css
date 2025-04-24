@@ -145,10 +145,12 @@ th, td {
     justify-content: center;
 }
 
+
+
 .gerador main{
     text-align: center;
     margin-top: 200px;
-    font-size: 25px;
+    font-size: 1rem;
 }
 
 #box {
@@ -157,6 +159,7 @@ th, td {
     margin-top: 5px;
     border-radius: 15px;
     background-color: #7a7d81;
+    padding: 0.4rem;
 }
 
 .descriçao {
@@ -193,7 +196,7 @@ th, td {
 }
 
 /* Contatos */
-.container {
+.container-contato{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -268,4 +271,44 @@ button:hover {
     position: fixed;
     left: 95%;
     top: 93%;
+}
+
+@media (max-width: 600px) {
+    header {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .links{
+        gap: 2rem;
+    }
+
+    /* Index */
+    .titulo-index {
+        margin-top: 100px;
+    }
+
+    /* Galeria */
+    .container {
+        margin-top: 100px;
+    }
+    .container div {
+        grid-template-columns: 1fr;
+    }
+
+    /* Contato */
+    .box {
+        margin-top: 100px;
+    }
+
+    .contato {
+        display: flex;
+        flex-direction: column;
+        width: 500px;
+    }
+
+    .contato input, textarea {
+        width: 100%;
+    }
+
 }

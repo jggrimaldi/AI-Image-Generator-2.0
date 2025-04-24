@@ -1,0 +1,39 @@
+@media (max-width: 600px) {
+    header {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .links{
+        gap: 2rem;
+    }
+
+    /* Index */
+    .titulo-index {
+        margin-top: 100px;
+    }
+
+    /* Galeria */
+    .container {
+        margin-top: 100px;
+    }
+    .container div {
+        grid-template-columns: 1fr;
+    }
+
+    /* Contato */
+    .box {
+        margin-top: 100px;
+    }
+
+    .contato {
+        display: flex;
+        flex-direction: column;
+        width: 500px;
+    }
+
+    .contato input, textarea {
+        width: 100%;
+    }
+
+}
